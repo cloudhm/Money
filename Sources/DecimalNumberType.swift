@@ -82,7 +82,7 @@ public struct DecimalNumberBehavior {
  A protocol which defines the necessary interface to support decimal number
  calculations and operators.
  */
-public protocol DecimalNumberType: Hashable, SignedNumber, ExpressibleByIntegerLiteral, ExpressibleByFloatLiteral, CustomStringConvertible {
+public protocol DecimalNumberType: Hashable, ExpressibleByIntegerLiteral, ExpressibleByFloatLiteral, CustomStringConvertible {
 
     associatedtype DecimalStorageType
     associatedtype DecimalNumberBehavior: DecimalNumberBehaviorType
